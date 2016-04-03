@@ -20,6 +20,7 @@ PATH
     mongoid_blog_demo_domain_model (0.1.0)
       mongoid (= 5.1.2)
       mongoid-sadstory (= 0.0.2)
+      waterdrop (= 0.3.0)
 
 GEM
   remote: https://rubygems.org/
