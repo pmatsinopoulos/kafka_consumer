@@ -7,6 +7,9 @@ class TestController < ApplicationController
       puts "About to create the Author: #{params['resource']}"
       actor = Author.new(name: params['resource']['name'])
       actor.save!
+      # need to write an ack message to "test_ack" topic
+      message = WaterDrop::Message.new("test_ack", {message: "author created"}.to_json)
+      message.send!
     end
   end
 end
