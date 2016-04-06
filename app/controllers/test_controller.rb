@@ -9,7 +9,6 @@ class TestController < ApplicationController
       actor = Author.new(name: name)
       actor.save!
       # need to write an ack message to "test_ack" topic
-      sleep(5)
       message = WaterDrop::Message.new("test_ack", {message: "author #{name} created"}.to_json)
       message.send!
     end

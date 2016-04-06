@@ -15,7 +15,7 @@ GIT
       worker-glass
 
 PATH
-  remote: ../../mongoid_blog_demo_domain_model
+  remote: ../mongoid_blog_demo_domain_model
   specs:
     mongoid_blog_demo_domain_model (0.1.0)
       mongoid (= 5.1.2)
