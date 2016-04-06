@@ -20,7 +20,7 @@ class App < Karafka::App
     }
 
     routes.draw do
-      topic :test do
+      topic :domain_model do
         controller TestController
         # interchanger CustomInterchanger
       end
